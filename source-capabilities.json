@@ -1,0 +1,87 @@
+{
+  "schema": "venera-eight-catalog-v2",
+  "total": 8,
+  "note": "Catalog listing is not a claim that the source supports in-app comic reading. External-only entries expose a user-clicked website button.",
+  "sites": [
+    {
+      "name": "香蕉漫画",
+      "url": "https://xjdm168.com/html/?p=1536",
+      "catalogListed": true,
+      "veneraPageReadingHttpTested": false,
+      "externalOnly": true,
+      "key": "banana_external",
+      "script": "scripts/banana-external.js",
+      "note": "浏览器能阅读；前端从动态 CDN 加载加密 .data 图片并渲染为 blob。Venera 不能直接使用 blob URL，尚无可用适配器。"
+    },
+    {
+      "name": "包子漫画",
+      "url": "https://baozimh.org/",
+      "catalogListed": true,
+      "veneraPageReadingHttpTested": false,
+      "externalOnly": true,
+      "key": "baozi_external",
+      "script": "scripts/baozi-external.js",
+      "note": "浏览器能阅读；章节 API v2.apikk.top 返回加密图片列表，站点的浏览器解码器生成图片 URL。直接 HTTP 请求 API 在当前命令行环境返回 403。"
+    },
+    {
+      "name": "动漫屋",
+      "url": "https://www.dm5.com/",
+      "catalogListed": true,
+      "veneraPageReadingHttpTested": true,
+      "externalOnly": false,
+      "key": "dm5_comics",
+      "script": "scripts/dm5.js",
+      "note": "样例搜索、详情、21 页章节、JPEG 图片通过 HTTP 测试；尚未在 Venera App 验收。"
+    },
+    {
+      "name": "次元狗",
+      "url": "https://www.acgndog.com/category/rec-comic",
+      "catalogListed": true,
+      "veneraPageReadingHttpTested": false,
+      "externalOnly": true,
+      "key": "acgndog_external",
+      "script": "scripts/acgndog-external.js",
+      "note": "漫画分类文章样例提供 PDF/epub 与网盘下载，不是逐页在线图片章节；作为外部资源入口保留。"
+    },
+    {
+      "name": "漫画迷",
+      "url": "https://www.manhuade.com/",
+      "catalogListed": true,
+      "veneraPageReadingHttpTested": false,
+      "externalOnly": true,
+      "key": "manhuade_external",
+      "script": "scripts/manhuade-external.js",
+      "note": "首页及样例文章提供 PDF/MOBI/JPG 电子书与网盘下载，不是逐页在线阅读接口；作为外部资源入口保留。"
+    },
+    {
+      "name": "X漫画",
+      "url": "https://www.xmanhua.com/",
+      "catalogListed": true,
+      "veneraPageReadingHttpTested": true,
+      "externalOnly": false,
+      "key": "xmanhua_comics",
+      "script": "scripts/xmanhua.js",
+      "note": "样例搜索、详情、4 页和 13 页章节、JPEG 图片通过 HTTP 测试；尚未在 Venera App 验收。"
+    },
+    {
+      "name": "H次元",
+      "url": "https://h-ciyuan.com/",
+      "catalogListed": true,
+      "veneraPageReadingHttpTested": false,
+      "externalOnly": true,
+      "key": "hciyuan_external",
+      "script": "scripts/hciyuan-external.js",
+      "note": "用户浏览器中漫画文章前后两页分别有 20/19 张公开 WebP 图片，样图 HEAD 200；命令行首页为 403，未验证 Venera 网络请求，故实验脚本不进入安装索引。下载内容需站点登录，本脚本不处理。"
+    },
+    {
+      "name": "污污漫画",
+      "url": "https://www.comicbox.xyz/?ref=porndude",
+      "catalogListed": true,
+      "veneraPageReadingHttpTested": false,
+      "externalOnly": true,
+      "key": "comicbox_external",
+      "script": "scripts/comicbox-external.js",
+      "note": "站内有 /book 与 /free-chapter 在线阅读；样例章节列出 62 页，但页面使用 monga-v2-encrypt-then-split 分块图片，原始 data-src 图片 URL 返回 404。尚无 Venera 可直接显示的图片 URL。"
+    }
+  ]
+}

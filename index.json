@@ -1,9 +1,58 @@
 [
   {
-    "name": "TIBIU 漫画",
-    "key": "tibiu_comics",
+    "name": "香蕉漫画｜仅外部入口",
+    "key": "banana_external",
     "version": "1.0.0",
-    "fileName": "scripts/tibiu-venera.js",
-    "description": "TIBIU 漫画：搜索、详情、章节与图片阅读"
+    "fileName": "scripts/banana-external.js",
+    "description": "仅外部入口：可打开网站，不能在 Venera 内逐页阅读"
+  },
+  {
+    "name": "包子漫画｜仅外部入口",
+    "key": "baozi_external",
+    "version": "1.0.0",
+    "fileName": "scripts/baozi-external.js",
+    "description": "仅外部入口：图片列表加密且 API 受限，不能在 Venera 内逐页阅读"
+  },
+  {
+    "name": "动漫屋",
+    "key": "dm5_comics",
+    "version": "0.2.2",
+    "fileName": "scripts/dm5.js",
+    "description": "HTTP 搜索、详情、章节与图片已测；Venera App 待验"
+  },
+  {
+    "name": "次元狗｜仅外部入口",
+    "key": "acgndog_external",
+    "version": "1.0.0",
+    "fileName": "scripts/acgndog-external.js",
+    "description": "仅外部入口：PDF/epub、网盘资源，非逐页图片源"
+  },
+  {
+    "name": "漫画迷｜仅外部入口",
+    "key": "manhuade_external",
+    "version": "1.0.0",
+    "fileName": "scripts/manhuade-external.js",
+    "description": "仅外部入口：PDF/MOBI 下载资源，非逐页图片源"
+  },
+  {
+    "name": "X漫画",
+    "key": "xmanhua_comics",
+    "version": "0.2.2",
+    "fileName": "scripts/xmanhua.js",
+    "description": "HTTP 搜索、详情、章节与图片已测；Venera App 待验"
+  },
+  {
+    "name": "H次元｜仅外部入口",
+    "key": "hciyuan_external",
+    "version": "1.0.0",
+    "fileName": "scripts/hciyuan-external.js",
+    "description": "仅外部入口：浏览器可读，但 Venera 网络请求未验且命令行遇 403"
+  },
+  {
+    "name": "污污漫画｜仅外部入口（18+）",
+    "key": "comicbox_external",
+    "version": "1.0.0",
+    "fileName": "scripts/comicbox-external.js",
+    "description": "仅外部入口：加密分块图片不能在 Venera 内直接逐页显示"
   }
 ]
