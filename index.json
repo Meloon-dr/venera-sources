@@ -1,0 +1,9 @@
+[
+  {
+    "name": "TIBIU 漫画",
+    "key": "tibiu_comics",
+    "version": "1.0.0",
+    "fileName": "scripts/tibiu-venera.js",
+    "description": "TIBIU 漫画：搜索、详情、章节与图片阅读"
+  }
+]
